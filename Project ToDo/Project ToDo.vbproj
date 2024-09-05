@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3DD5579-95A6-4F7B-86E8-81F03A402B1E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Project_ToDo.My.MyApplication</StartupObject>
+    <RootNamespace>Project_ToDo</RootNamespace>
+    <AssemblyName>Project ToDo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\vf029552\Desktop\Applications\Project ToDo\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Project ToDo/</UpdateUrl>
+    <PublisherName>Honda of America Mfg., Inc</PublisherName>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>33</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Project ToDo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Project ToDo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1494458786_Folder_Mac_Private.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>14AE45D141448D4B8551A888C60138CD2A5A1D32</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsTag.vb" />
+    <Compile Include="cls_TreeviewOwnerDraw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ctrl_CalendarDay.Designer.vb">
+      <DependentUpon>ctrl_CalendarDay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl_CalendarDay.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrl_CalendarSmall.Designer.vb">
+      <DependentUpon>ctrl_CalendarSmall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl_CalendarSmall.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrl_Images.Designer.vb">
+      <DependentUpon>ctrl_Images.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl_Images.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrl_ItemTimeLine.Designer.vb">
+      <DependentUpon>ctrl_ItemTimeLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl_ItemTimeLine.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrl_MenuItem.designer.vb">
+      <DependentUpon>ctrl_MenuItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl_MenuItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrl_OpenItems.Designer.vb">
+      <DependentUpon>ctrl_OpenItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl_OpenItems.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrl_Schedule.Designer.vb">
+      <DependentUpon>ctrl_Schedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl_Schedule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctr_ProjTimeLine.Designer.vb">
+      <DependentUpon>ctr_ProjTimeLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctr_ProjTimeLine.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frm_Calendar.Designer.vb">
+      <DependentUpon>frm_Calendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Calendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Image.Designer.vb">
+      <DependentUpon>frm_Image.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Image.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.Designer.vb">
+      <DependentUpon>frm_Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NewItem.Designer.vb">
+      <DependentUpon>frm_NewItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NewItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modClasses.vb" />
+    <Compile Include="mod_Functions.vb" />
+    <Compile Include="mod_IdleTime.vb" />
+    <Compile Include="mod_PaintSchedule.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources\frm_Notes.Designer.vb">
+      <DependentUpon>frm_Notes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\frm_Notes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Snippit.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ctrl_CalendarDay.resx">
+      <DependentUpon>ctrl_CalendarDay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrl_CalendarSmall.resx">
+      <DependentUpon>ctrl_CalendarSmall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrl_Images.resx">
+      <DependentUpon>ctrl_Images.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrl_ItemTimeLine.resx">
+      <DependentUpon>ctrl_ItemTimeLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrl_MenuItem.resx">
+      <DependentUpon>ctrl_MenuItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrl_OpenItems.resx">
+      <DependentUpon>ctrl_OpenItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrl_Schedule.resx">
+      <DependentUpon>ctrl_Schedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctr_ProjTimeLine.resx">
+      <DependentUpon>ctr_ProjTimeLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Calendar.resx">
+      <DependentUpon>frm_Calendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Image.resx">
+      <DependentUpon>frm_Image.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NewItem.resx">
+      <DependentUpon>frm_NewItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Project ToDo_TemporaryKey.pfx" />
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1457317383_Plus 24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet points.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward_arrows 48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Numbered-List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Small Dash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_indent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_indent_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White Dash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1494458786_Folder_Mac_Private.ico" />
+    <Content Include="Black-Microsoft-Project.ico" />
+    <Content Include="Project-plan.ico" />
+    <None Include="Resources\Strikethrough.png" />
+    <None Include="Resources\Checkmark-24.png" />
+    <None Include="Resources\Cross %28X%29-24.png" />
+    <None Include="Resources\Delete Item.png" />
+    <None Include="Resources\Remove Item.png" />
+    <None Include="Resources\1495073887_1.png" />
+    <None Include="Resources\1495073941_archive-insert-directory.png" />
+    <None Include="Resources\1495073986_insert-image.png" />
+    <None Include="Resources\1495073986_insert-image1.png" />
+    <None Include="Resources\Data_floppy_save.png" />
+    <None Include="Resources\Data_storage_floppy_save small.png" />
+    <None Include="Resources\Calendar.png" />
+    <None Include="Resources\Font-size-decrease.png" />
+    <None Include="Resources\Font-size-increase.png" />
+    <None Include="Resources\Highlight Marker.png" />
+    <None Include="Resources\Fit_to_Window.png" />
+    <None Include="Resources\Image Size Decrease.png" />
+    <None Include="Resources\Image Size Increase.png" />
+    <EmbeddedResource Include="Resources\frm_Notes.resx">
+      <DependentUpon>frm_Notes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\start point.png" />
+    <None Include="Resources\gauge-high.png" />
+    <None Include="Resources\gauge-low.png" />
+    <None Include="Resources\gauge-medium.png" />
+    <None Include="Resources\daily planning.png" />
+    <None Include="Resources\folder_data.png" />
+    <None Include="Resources\priority list.png" />
+    <None Include="Resources\project SAP.png" />
+    <None Include="Resources\start flag.png" />
+    <EmbeddedResource Include="Resources\emergency.png" />
+    <EmbeddedResource Include="Resources\in_progress.png" />
+    <EmbeddedResource Include="Resources\icebox.png" />
+    <EmbeddedResource Include="Resources\testing.jpg" />
+    <None Include="Resources\past-due-stamp.jpg" />
+    <EmbeddedResource Include="Resources\past-due-icon.jpg" />
+    <EmbeddedResource Include="Resources\Notes small.png" />
+    <EmbeddedResource Include="Resources\pin.png" />
+    <EmbeddedResource Include="Resources\push_pin.png" />
+    <EmbeddedResource Include="Resources\bug_insect.png" />
+    <EmbeddedResource Include="Resources\bulb_idea.png" />
+    <EmbeddedResource Include="Resources\Vacation 32x32.png" />
+    <EmbeddedResource Include="Resources\progress up.png" />
+    <EmbeddedResource Include="Resources\un_scheduled.png" />
+    <EmbeddedResource Include="Resources\un_scheduled_light.png" />
+    <EmbeddedResource Include="Resources\published.png" />
+    <EmbeddedResource Include="Resources\status_UserTesting.png" />
+    <None Include="Resources\testing_2.jpg" />
+    <EmbeddedResource Include="Resources\testing_3.png" />
+    <EmbeddedResource Include="Resources\CalendarEvent.png" />
+    <Content Include="Scheduled-tasks.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
